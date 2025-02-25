@@ -7,8 +7,8 @@ const WorkSection = () => {
       <div className="work__container wrapper">
         <div className="work__header">
           <div className="work__title">
-            <h1>Control the flow. </h1>
-            <h2>Work faster.</h2>
+            <h2>Control the flow. </h2>
+            <h3>Work faster.</h3>
           </div>
           <div className="work__text">
             <p>

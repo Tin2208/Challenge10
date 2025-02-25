@@ -1,11 +1,10 @@
 .product {
+  position: relative;
   min-height: 1189px;
-  max-height: 1189px;
 }
 @media screen and (max-width: 25em) {
   .product {
-    min-height: 479px;
-    max-height: 479px;
+    min-height: unset;
   }
 }
 .product .wrapper {
@@ -15,32 +14,22 @@
   background-color: #4f46e5;
   width: 100%;
   padding: 80px 80px 387px 80px;
-  position: absolute;
 }
 @media screen and (max-width: 25em) {
   .product__header {
     padding: 48px 16px 96px 16px;
   }
 }
-.product__title h1 {
-  font-size: 48px;
-  line-height: 52.8px;
-  color: var(--second-color);
-  text-align: center;
-}
-@media screen and (max-width: 25em) {
-  .product__title h1 {
-    font-size: 24px;
-    line-height: 26.4px;
-  }
-}
 .product__img {
-  padding: 80px 70px;
+  padding: 0 70px;
   position: absolute;
-  transform: translate(0, 157px);
+  top: 271px;
 }
 @media screen and (max-width: 25em) {
   .product__img {
-    padding: 32px 14px 48px 14px;
+    padding: 0 24px;
+    bottom: 48px;
+    position: relative !important;
+    top: unset;
   }
 }/*# sourceMappingURL=Product.css.map */

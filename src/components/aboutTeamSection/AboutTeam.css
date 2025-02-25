@@ -10,10 +10,12 @@
   .aboutTeam__container {
     flex-direction: column;
     padding: 48px 16px;
+    gap: 88px;
   }
 }
 .aboutTeam__text {
   display: flex;
+  align-items: center;
   width: 100%;
   gap: 80px;
 }
@@ -35,6 +37,9 @@
   }
 }
 .aboutTeam__content {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
   width: 50%;
 }
 @media screen and (max-width: 25em) {
@@ -47,6 +52,9 @@
   .aboutTeam__content p {
     display: none;
   }
+}
+.aboutTeam__content span {
+  display: none;
 }
 @media screen and (max-width: 25em) {
   .aboutTeam__content span {

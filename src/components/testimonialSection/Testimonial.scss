@@ -25,12 +25,12 @@
 
   .testimonialSection__card {
     @include flex-col;
-    gap: 16px;
+    gap: 32px;
     background-color: #334155;
-    padding: 51px 32px;
+    padding: 67px 32px 51px 32px;
     border-radius: 20px;
     max-width: 384px;
-    min-width: 384px;
+    // min-width: 384px;
     @include respond(phone) {
       padding: 32px 16px 16px 16px;
     }
@@ -84,8 +84,7 @@
     }
   }
   .testimonialSection__card:nth-child(2) {
-    max-height: 506px;
-    min-height: 506px;
+    padding: 48px 32px 32px 32px;
 
     @include respond(phone) {
       width: 316px !important;
@@ -96,7 +95,6 @@
   .testimonialSection__card:nth-child(1),
   .testimonialSection__card:nth-child(3) {
     max-height: 468px;
-    min-height: 468px;
 
     @include respond(phone) {
       display: none;

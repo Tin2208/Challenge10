@@ -34,19 +34,30 @@
 .hero__buttons {
   display: flex;
   gap: 16px;
+  width: 100%;
+  justify-content: center;
 }
 @media screen and (max-width: 25em) {
   .hero__buttons .btn--secondary {
     font-size: 16px;
-    padding: 12px 36.5px;
+    padding: 12px 0;
+    width: 100%;
   }
 }
-.hero__buttons .btn--primary {
-  font-size: 16px;
-  padding: 12px 16px;
+@media screen and (max-width: 25em) {
+  .hero__buttons .btn--primary {
+    font-size: 16px;
+    padding: 12px 0;
+    width: 100%;
+  }
 }
 .hero__shapes {
   padding-top: 5rem;
+}
+@media screen and (max-width: 25em) {
+  .hero__shapes {
+    padding-top: 48px;
+  }
 }
 .hero__shapes img {
   margin: auto;

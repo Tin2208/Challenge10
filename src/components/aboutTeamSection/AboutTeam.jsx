@@ -6,14 +6,19 @@ const AboutTeam = () => {
     <div className="aboutTeam">
       <div className="aboutTeam__container wrapper">
         <div className="aboutTeam__header">
-          <h1>Your team. Your projects.</h1>
-          <h2>Always together.</h2>
+          <div className="aboutTeam__header--title">
+            <h2>Your team. Your projects.</h2>
+            <h3>Always together.</h3>
+          </div>
+
           <p>Malesuada ut aliquam at ac est nisi, interdum etiam dignissim.</p>
         </div>
         <div className="aboutTeam__text">
           <div className="aboutTeam__content">
-            <h1>Bigger team.</h1>
-            <h2>More time.</h2>
+            <div className="aboutTeam__content--title">
+              <h2>Bigger team.</h2>
+              <h3>More time.</h3>
+            </div>
             <p>
               Quam quis orci turpis vulputate platea. Urna ipsum suscipit nullam
               ipsum nam leo fringilla eget lorem. Sit vestibulum phasellus

@@ -14,8 +14,8 @@ const Team = () => {
           </div>
           <div className="tool__content">
             <div className="tool__header">
-              <h1>Powerful tools.</h1>
-              <h2>More control.</h2>
+              <h2>Powerful tools.</h2>
+              <h3>More control.</h3>
             </div>
             <div className="tool__text">
               <p>
@@ -38,12 +38,12 @@ const Team = () => {
                   <img src={Select} alt="Select" className="tool__select" />
                   Vitae odio a id purus in.
                 </li>
+                <li className="tool_btn">
+                  <button className="tool__btn btn--secondary">
+                    Start for free
+                  </button>
+                </li>
               </ul>
-              <div className="tool_btn">
-                <button className="tool__btn btn--secondary">
-                  Start for free
-                </button>
-              </div>
             </div>
           </div>
         </div>
@@ -51,8 +51,8 @@ const Team = () => {
         <div className="team__tool">
           <div className="tool__content">
             <div className="tool__header">
-              <h1>Team management.</h1>
-              <h2>Effortless syncronization.</h2>
+              <h2>Team management.</h2>
+              <h3>Effortless syncronization.</h3>
             </div>
             <div className="tool__text">
               <p>
@@ -74,12 +74,12 @@ const Team = () => {
                   <img src={Select} alt="Select" className="tool__select" />
                   Ullamcorper ornare in et egestas dolor orci.
                 </li>
+                <li className="tool_btn">
+                  <button className="tool__btn btn--secondary">
+                    Start for free
+                  </button>
+                </li>
               </ul>
-              <div className="tool_btn">
-                <button className="tool__btn btn--secondary">
-                  Start for free
-                </button>
-              </div>
             </div>
           </div>
           <div className="tool__img">

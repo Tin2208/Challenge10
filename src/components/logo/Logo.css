@@ -4,10 +4,13 @@
   row-gap: 80px;
   padding-bottom: 80px;
 }
-.logo__title p {
-  font-size: 24px;
-  font-weight: 700;
-  color: var(--blue-gray);
+@media screen and (max-width: 25em) {
+  .logo__container {
+    padding-bottom: 48px;
+    row-gap: 32px;
+  }
+}
+.logo__title {
   text-align: center;
 }
 .logo__lists {

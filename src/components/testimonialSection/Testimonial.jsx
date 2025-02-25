@@ -12,8 +12,8 @@ const TestimonialSection = () => {
     <section className="testimonialSection">
       <div className="testimonialSection__container wrapper">
         <div className="testimonialSection__header">
-          <h1>Our partners. Our Friends.</h1>
-          <h2>They love us.</h2>
+          <h2>Our partners. Our Friends.</h2>
+          <h3>They love us.</h3>
           <p>Sem malesuada sed lectus id nunc mattis est eget tincidunt.</p>
         </div>
         <div className="testimonialSection__lists">
