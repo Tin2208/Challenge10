@@ -1,0 +1,66 @@
+@import "../../styles/mixins.scss";
+
+.aboutTeam {
+  &__container {
+    padding: 80px;
+    @include flex-align-center;
+    flex-direction: column;
+
+    width: 100%;
+    gap: 80px;
+
+    @include respond(phone) {
+      flex-direction: column;
+      padding: 48px 16px;
+    }
+  }
+
+  &__text {
+    display: flex;
+    width: 100%;
+    gap: 80px;
+    @include respond(phone) {
+      flex-direction: column;
+      gap: 32px;
+    }
+  }
+
+  &__header {
+    width: 100%;
+    gap: 80px;
+    text-align: center;
+
+    @include respond(phone) {
+      width: 100%;
+      gap: 32px;
+    }
+  }
+
+  &__content {
+    width: 50%;
+    @include respond(phone) {
+      width: 100%;
+      text-align: center;
+    }
+    p {
+      @include respond(phone) {
+        display: none;
+      }
+    }
+    span {
+      @include respond(phone) {
+        font-size: 16px;
+        display: flex;
+        color: var(--blue-gray);
+        line-height: 28.8px;
+      }
+    }
+  }
+
+  &__img {
+    width: 50%;
+    @include respond(phone) {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,44 @@
+@import "../../styles/mixins.scss";
+
+.work {
+  background-color: #1e293b;
+  &__container {
+    padding: 80px 0 0 80px;
+    display: flex;
+    gap: 80px;
+    width: 100%;
+    @include respond(phone) {
+      flex-direction: column;
+      padding: 48px 0 0 16px;
+      gap: 32px;
+    }
+  }
+
+  &__header {
+    @include flex-col;
+    gap: 32px;
+    width: 50%;
+
+    @include respond(phone) {
+      width: 100%;
+    }
+  }
+
+  &__title {
+  }
+
+  &__text {
+  }
+
+  &__btn {
+    button {
+      padding: 16px 32px;
+    }
+  }
+  &__img {
+    width: 50%;
+    @include respond(phone) {
+      width: 100%;
+    }
+  }
+}

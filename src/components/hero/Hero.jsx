@@ -1,33 +1,36 @@
-import './Hero.scss';
-import Mob from '../../assets/Mob.png';
-import Aos from 'aos';
-import 'aos/dist/aos.css';
-import { useEffect } from 'react';
+import "./Hero.scss";
+import Spapes from "../../assets/Shapes.svg";
 
-export const Hero = () => {
+import React from "react";
 
-    useEffect(() => {
-        Aos.init({duration: 1000});
-    }, )
-
-  return <section className='hero'>
-    <div className="hero__container wrapper">
-        <div className="hero__left" data-aos='zoom-in-up'>
-            <img src={Mob} alt="hero" />
+const Hero = () => {
+  return (
+    <section className="hero">
+      <div className="hero__container wrapper">
+        <div className="hero__title">
+          <p>Team Progress Tracking Tool</p>
         </div>
-        <div className="hero__right" data-aos='fade-left'>
-            <h1>Make easier your crypto transaction</h1>
-            <p>
-                Our cryptocurrency offers a fast, secure, and affordable alternaticve 
-                for all of your financial needs. Join the cryptocurrency revolution today
-                and take control of your financial future. Sign up now to start using
-                our platform for yourself.
-            </p>
-            <a href="#" className='btn'>TRY FOR FREE</a>
+        <div className="hero__content">
+          <h1>Track your team progress</h1>
+          <p>
+            Ut posuere felis arcu tellus tempus in in ultricies. Gravida id nibh
+            ornare viverra. <br />
+            Ultrices faucibus neque velit risus ac id lorem.
+          </p>
+          <div className="hero__buttons">
+            <button className="btn--secondary">Start for free</button>
+            <button className="btn--primary">Request more info</button>
+          </div>
         </div>
 
-    </div>
-  </section>
-}
+        <div>
+          <div className="hero__shapes">
+            <img src={Spapes} alt="shapes" />
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
 
-export default Hero
+export default Hero;

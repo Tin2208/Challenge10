@@ -1,0 +1,125 @@
+.footer {
+  background-color: var(--Charcoal-Blue);
+}
+.footer__container {
+  padding: 80px 80px 0 80px;
+}
+@media screen and (max-width: 25em) {
+  .footer__container {
+    padding: 48px 16px 0 16px;
+  }
+}
+.footer__columns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 25em) {
+  .footer__columns {
+    flex-direction: column;
+    align-items: unset;
+  }
+}
+.footer__column {
+  padding-bottom: 80px;
+}
+@media screen and (max-width: 25em) {
+  .footer__column {
+    padding-bottom: 32px;
+  }
+}
+.footer__column h4 {
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--second-color);
+  padding-bottom: 12px;
+}
+@media screen and (max-width: 25em) {
+  .footer__column h4 {
+    font-size: 16px;
+  }
+}
+.footer__column ul {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.footer__column ul li {
+  display: flex;
+  align-items: center;
+  color: #e2e8f0;
+  font-weight: 400;
+  font-size: 16px;
+}
+@media screen and (max-width: 25em) {
+  .footer__column ul li {
+    font-size: 16px;
+  }
+}
+.footer__column ul li .beta-tag {
+  color: black;
+  width: 45;
+  height: 20;
+  padding: 4px;
+  border-radius: 4px;
+  background-color: #e0e8ff;
+  font-size: 12px;
+  margin-left: 12px;
+}
+.footer__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 36px 0;
+}
+@media screen and (max-width: 25em) {
+  .footer__bottom {
+    flex-direction: column;
+    align-items: unset;
+    gap: 16px;
+  }
+}
+.footer__links {
+  display: flex;
+  color: #e2e8f0;
+  font-weight: 400;
+  font-size: 16px;
+  gap: 32px;
+}
+@media screen and (max-width: 25em) {
+  .footer__links {
+    flex-wrap: wrap;
+    font-size: 14px;
+    gap: 16px;
+  }
+  .footer__links :nth-child(1) {
+    flex: 1 1 100%;
+  }
+}
+.footer__socials {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+@media screen and (max-width: 25em) {
+  .footer__socials {
+    flex-direction: column;
+    align-items: unset;
+    gap: 16px;
+  }
+}
+.footer__apps {
+  display: flex;
+  gap: 16px;
+}
+.footer__apps img {
+  width: 24px;
+  height: 24px;
+}
+.footer__appsStore {
+  display: flex;
+  gap: 16px;
+}
+.footer .footer__arrow {
+  margin-left: 8px;
+}/*# sourceMappingURL=footer.css.map */

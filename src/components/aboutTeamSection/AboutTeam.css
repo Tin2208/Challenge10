@@ -1,0 +1,66 @@
+.aboutTeam__container {
+  padding: 80px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  gap: 80px;
+}
+@media screen and (max-width: 25em) {
+  .aboutTeam__container {
+    flex-direction: column;
+    padding: 48px 16px;
+  }
+}
+.aboutTeam__text {
+  display: flex;
+  width: 100%;
+  gap: 80px;
+}
+@media screen and (max-width: 25em) {
+  .aboutTeam__text {
+    flex-direction: column;
+    gap: 32px;
+  }
+}
+.aboutTeam__header {
+  width: 100%;
+  gap: 80px;
+  text-align: center;
+}
+@media screen and (max-width: 25em) {
+  .aboutTeam__header {
+    width: 100%;
+    gap: 32px;
+  }
+}
+.aboutTeam__content {
+  width: 50%;
+}
+@media screen and (max-width: 25em) {
+  .aboutTeam__content {
+    width: 100%;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 25em) {
+  .aboutTeam__content p {
+    display: none;
+  }
+}
+@media screen and (max-width: 25em) {
+  .aboutTeam__content span {
+    font-size: 16px;
+    display: flex;
+    color: var(--blue-gray);
+    line-height: 28.8px;
+  }
+}
+.aboutTeam__img {
+  width: 50%;
+}
+@media screen and (max-width: 25em) {
+  .aboutTeam__img {
+    width: 100%;
+  }
+}/*# sourceMappingURL=AboutTeam.css.map */

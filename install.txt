@@ -1,9 +1,13 @@
+//Các bước cài Vite:
+
 --npm create vite@latest my-vite-app
 
 --cd my-vite-app
 
 --npm install
-
+//Chạy chương trình
 --npm run dev
-
+//Cài đặt Sass
 --npm install sass
+//Truy cập ứng dung
+-- vite --host

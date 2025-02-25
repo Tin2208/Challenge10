@@ -1,0 +1,56 @@
+@import "../../styles/mixins.scss";
+
+.product {
+  min-height: 1189px;
+  max-height: 1189px;
+  @include respond(phone) {
+    min-height: 479px;
+    max-height: 479px;
+  }
+
+  &__container {
+    // padding: 5rem;
+  }
+
+  .wrapper {
+    padding-inline: unset;
+  }
+
+  &__header {
+    background-color: #4f46e5;
+    width: 100%;
+    padding: 80px 80px 387px 80px;
+    position: absolute;
+
+    @include respond(phone) {
+      padding: 48px 16px 96px 16px;
+    }
+  }
+
+  &__title {
+    h1 {
+      font-size: 48px;
+      line-height: 52.8px;
+      color: var(--second-color);
+      text-align: center;
+
+      @include respond(phone) {
+        font-size: 24px;
+        line-height: 26.4px;
+      }
+    }
+  }
+
+  &__img {
+    padding: 80px 70px;
+    position: absolute;
+    transform: translate(0, 157px);
+
+    @include respond(phone) {
+      padding: 32px 14px 48px 14px;
+    }
+
+    img {
+    }
+  }
+}

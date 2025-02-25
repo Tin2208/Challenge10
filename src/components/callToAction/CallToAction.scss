@@ -1,0 +1,47 @@
+@import "../../styles/mixins.scss";
+
+.callToAction {
+  &__container {
+    padding: 5rem;
+
+    @include flex-col;
+    gap: 32px;
+    align-items: center;
+
+    @include respond(phone) {
+      padding: 48px 16px;
+    }
+  }
+
+  &__header {
+    text-align: center;
+  }
+
+  &__text {
+    width: 50%;
+
+    @include respond(phone) {
+      width: 100%;
+    }
+  }
+
+  &__btns {
+    display: flex;
+    gap: 16px;
+    .btn--secondary {
+      padding: 16px 67px;
+
+      @include respond(phone) {
+        padding: 12px 36.75px;
+        font-size: 16px;
+      }
+    }
+    .btn--primary {
+      padding: 16px 41.5px;
+      @include respond(phone) {
+        padding: 12px 16.25px;
+        font-size: 16px;
+      }
+    }
+  }
+}

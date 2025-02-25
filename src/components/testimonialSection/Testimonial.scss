@@ -1,0 +1,123 @@
+@import "../../styles/mixins.scss";
+
+.testimonialSection {
+  &__container {
+    padding: 80px;
+
+    @include respond(phone) {
+      padding: 48px 16px;
+    }
+  }
+
+  &__header {
+    text-align: center;
+  }
+  &__lists {
+    gap: 24px;
+    @include flex-align-center;
+    justify-content: center;
+    padding-top: 80px;
+
+    @include respond(phone) {
+      padding-top: 32px;
+    }
+  }
+
+  .testimonialSection__card {
+    @include flex-col;
+    gap: 16px;
+    background-color: #334155;
+    padding: 51px 32px;
+    border-radius: 20px;
+    max-width: 384px;
+    min-width: 384px;
+    @include respond(phone) {
+      padding: 32px 16px 16px 16px;
+    }
+  }
+
+  .testimonialSection__card--header {
+    @include flex-align-center;
+    gap: 8px;
+    color: var(--cool-gray);
+    img {
+      width: 32px;
+      color: var(--cool-gray);
+    }
+  }
+
+  .testimonialSection__card--content {
+    span {
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 38.4px;
+      color: var(--second-color);
+
+      @include respond(phone) {
+        font-size: 16px;
+      }
+    }
+  }
+
+  .testimonialSection__card--footer {
+    @include flex-align-center;
+    gap: 16px;
+  }
+
+  .testimonialSection__card--img {
+    img {
+      width: 64px;
+    }
+  }
+
+  .testimonialSection__card--infors {
+    span {
+      font-weight: 400;
+      font-size: 18px;
+      color: var(--second-color);
+    }
+
+    p {
+      font-weight: 400;
+      font-size: 16px;
+      color: var(--cool-gray);
+    }
+  }
+  .testimonialSection__card:nth-child(2) {
+    max-height: 506px;
+    min-height: 506px;
+
+    @include respond(phone) {
+      width: 316px !important;
+      min-width: unset;
+      min-height: unset;
+    }
+  }
+  .testimonialSection__card:nth-child(1),
+  .testimonialSection__card:nth-child(3) {
+    max-height: 468px;
+    min-height: 468px;
+
+    @include respond(phone) {
+      display: none;
+    }
+  }
+
+  .testimonialSection__footer {
+    padding-top: 80px;
+    display: flex;
+    justify-content: center;
+    gap: 64px;
+
+    @include respond(phone) {
+      display: none;
+    }
+    button {
+      @include flex-align-center;
+      gap: 16px;
+      background-color: #0f172a;
+      border: none;
+      color: white;
+    }
+  }
+}

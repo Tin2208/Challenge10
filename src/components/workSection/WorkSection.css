@@ -1,0 +1,38 @@
+.work {
+  background-color: #1e293b;
+}
+.work__container {
+  padding: 80px 0 0 80px;
+  display: flex;
+  gap: 80px;
+  width: 100%;
+}
+@media screen and (max-width: 25em) {
+  .work__container {
+    flex-direction: column;
+    padding: 48px 0 0 16px;
+    gap: 32px;
+  }
+}
+.work__header {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 50%;
+}
+@media screen and (max-width: 25em) {
+  .work__header {
+    width: 100%;
+  }
+}
+.work__btn button {
+  padding: 16px 32px;
+}
+.work__img {
+  width: 50%;
+}
+@media screen and (max-width: 25em) {
+  .work__img {
+    width: 100%;
+  }
+}/*# sourceMappingURL=WorkSection.css.map */

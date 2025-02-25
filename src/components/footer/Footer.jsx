@@ -1,71 +1,117 @@
-import '../footer/Footer.scss';
-import Aos from 'aos';
-import 'aos/dist/aos.css';
-import { useEffect } from 'react';
-import Logo from '../../assets/Logo.png';
-import {
-    FaFacebookF,
-    FaInstagram,
-    FaTwitter,
-    FaLinkedinIn,
-    FaYoutube,
-} from 'react-icons/fa';
- 
- const Footer = () => {
-    useEffect(() => {
-      Aos.init({ duration: 1000 });
-    }, []);
-   return <section className="footer">
-    <div className="footer__container wrapper" data-aos='fade-up'>
-       <div className="footer__col">
-        <img src={Logo} alt="logo" />
-        <p>
-            Posuere ac in in nisl sed augue. Ultrices eget pretium sit euismod
-            mi id posuere ac in in nisl sed augue.
-        </p>
-       </div>
+import "./footer.scss";
+import { FaArrowRight } from "react-icons/fa";
+import Facebook from "../../assets/Facebook.svg";
+import Twitter from "../../assets/Twitter.svg";
+import Instagram from "../../assets/Instagram.svg";
+import Linkedin from "../../assets/Linkedin.svg";
+import Youtube from "../../assets/Youtube.svg";
+import AppStore from "../../assets/AppStore.svg";
+import GooglePlay from "../../assets/GooglePlay.svg";
 
-
-        <div className="footer__col">
-            <h3>About</h3>
-            <a href="#">about us</a>
-            <a href="#">features</a>
-            <a href="#">news</a>
-
+const Footer = () => {
+  return (
+    <footer className="footer">
+      <div className="footer__container wrapper">
+        <div className="footer__columns">
+          <div className="footer__column">
+            <h4>Categories</h4>
+            <ul>
+              <li>User Interface</li>
+              <li>User Experience</li>
+              <li>Digital Media</li>
+              <li>Lifestyle</li>
+            </ul>
+          </div>
+          <div className="footer__column">
+            <h4>Product</h4>
+            <ul>
+              <li>Pricing</li>
+              <li>Overview</li>
+              <li>Browse</li>
+              <li>
+                Accessibility <span className="beta-tag">BETA</span>
+              </li>
+            </ul>
+          </div>
+          <div className="footer__column">
+            <h4>Solutions</h4>
+            <ul>
+              <li>Brainstorming</li>
+              <li>Ideation</li>
+              <li>Wireframing</li>
+              <li>Research</li>
+            </ul>
+          </div>
+          <div className="footer__column">
+            <h4>Resources</h4>
+            <ul>
+              <li>Help Center</li>
+              <li>Blog</li>
+              <li>Tutorials</li>
+              <li>FAQs</li>
+            </ul>
+          </div>
+          <div className="footer__column">
+            <h4>Support</h4>
+            <ul>
+              <li>Contact Us</li>
+              <li>Developers</li>
+              <li>Documentation</li>
+              <li>Integrations</li>
+            </ul>
+          </div>
+          <div className="footer__column">
+            <h4>Company</h4>
+            <ul>
+              <li>About</li>
+              <li>Press</li>
+              <li>Events</li>
+              <li>
+                Request Demo
+                <FaArrowRight className="footer__arrow" />
+              </li>
+            </ul>
+          </div>
         </div>
-        <div className="footer__col">
-            <h3>Company</h3>
-            <a href="#">Crytocode</a>
-            <a href="#">Security</a>
-            <a href="#">Ranking</a>
 
-        </div> <div className="footer__col">
-            <h3>Support</h3>
-            <a href="#">FAQs</a>
-            <a href="#">Support</a>
-            <a href="#">Contact Us</a>
-
-        </div>
-
-        <div className="footer__col">
-            <h3>Socials</h3>
-            <div className="footer__icons">
-                <a href="#" className='footer__icon'>
-                    <FaFacebookF />
-                </a>
-                <a href="#" className='footer__icon'>
-                    <FaInstagram />
-                </a><a href="#" className='footer__icon'>
-                    <FaLinkedinIn />
-                </a><a href="#" className='footer__icon'>
-                    <FaTwitter />
-                </a><a href="#" className='footer__icon'>
-                    <FaYoutube />
-                </a>
+        <div className="footer__bottom">
+          <ul className="footer__links">
+            <li>Trakor © 2023</li>
+            <li>Terms of Service</li>
+            <li>Privacy Policy</li>
+            <li>Manage Cookies</li>
+          </ul>
+          <div className="footer__socials">
+            <div className="footer__apps">
+              <a href="#">
+                <img src={Youtube} alt="icon" />
+              </a>
+              <a href="#">
+                <img src={Facebook} alt="icon" />
+              </a>
+              <a href="#">
+                <img src={Twitter} alt="icon" />
+              </a>{" "}
+              <a href="#">
+                <img src={Instagram} alt="icon" />
+              </a>{" "}
+              <a href="#">
+                <img src={Linkedin} alt="icon" />
+              </a>{" "}
             </div>
+            <div className="footer__appsStore">
+              <a href="#">
+                <img src={AppStore} alt="icon" />
+              </a>{" "}
+              <a href="#">
+                <img src={GooglePlay} alt="icon" />
+              </a>
+            </div>
+          </div>
         </div>
-    </div>
-   </section>
- }
- 
- export default Footer
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;

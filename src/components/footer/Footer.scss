@@ -1,72 +1,118 @@
-@import '../../styles/mixins.scss';
+@import "../../styles/mixins.scss";
 
 .footer {
-    padding-block: 5rem;
-
-    &__container {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
-        gap: 4rem 1rem;
-
-        
+  background-color: var(--Charcoal-Blue);
+  &__container {
+    padding: 80px 80px 0 80px;
+    @include respond(phone) {
+      padding: 48px 16px 0 16px;
     }
+  }
 
-    img {
-        width: 5rem;
-        margin-bottom: 1rem;
+  &__columns {
+    @include flex-between;
+
+    @include respond(phone) {
+      flex-direction: column;
+      align-items: unset;
     }
+  }
 
-    h3 {
+  &__column {
+    padding-bottom: 80px;
+    @include respond(phone) {
+      padding-bottom: 32px;
+    }
+    h4 {
+      font-weight: 500;
+      font-size: 16px;
+      color: var(--second-color);
+      padding-bottom: 12px;
+
+      @include respond(phone) {
+        font-size: 16px;
+      }
+    }
+    ul {
+      @include flex-col;
+      gap: 12px;
+      li {
+        @include flex-align-center;
+        color: #e2e8f0;
         font-weight: 400;
-        font-size: 1.3rem;
-        margin-bottom: 0.8rem;
-    }
-
-    &__col:not(:last-child) {
-        a {
-            color: var(--spanish-gray);
-            text-transform: uppercase;
-            display: block;
-            margin-top: 0.5rem;
-            font-size: 0.9rem;
-            transition: all 0.3s ease;
-
-            &:hover {
-                color: var(--cultured);
-            }
-        }
-    }
-
-    &__col:not(:first-child) {
-        margin-inline: auto;
-
+        font-size: 16px;
         @include respond(phone) {
-            margin: 0;
+          font-size: 16px;
         }
-    }
-
-    &__icons {
-        display: flex;
-        align-items: center;
-        flex-wrap: wrap;
-        gap: 0.5rem;
-    }
-
-    &__icon {
-        padding: 0.7rem;
-        background-color: var(--black);
-        display: grid;
-        place-content: center;
-        border-radius: 0.5rem;
-        border: 1px solid var(--black--olive);
-        transition: all 0.3s ease;
-        color: var(--cultured);
-
-        &:hover {
-            background: var(--gradient);
-
+        .beta-tag {
+          color: black;
+          width: 45;
+          height: 20;
+          padding: 4px;
+          border-radius: 4px;
+          background-color: #e0e8ff;
+          font-size: 12px;
+          margin-left: 12px;
         }
+      }
     }
+  }
 
+  &__bottom {
+    @include flex-between;
+    padding: 36px 0;
+    @include respond(phone) {
+      flex-direction: column;
+      align-items: unset;
+      gap: 16px;
+    }
+  }
 
+  &__links {
+    display: flex;
+    color: #e2e8f0;
+    font-weight: 400;
+    font-size: 16px;
+    gap: 32px;
+    @include respond(phone) {
+      flex-wrap: wrap;
+      font-size: 14px;
+      gap: 16px;
+
+      :nth-child(1) {
+        flex: 1 1 100%;
+      }
+      :nth-child(2),
+      :nth-child(3),
+      :nth-child(4) {
+      }
+    }
+  }
+
+  &__socials {
+    @include flex-align-center;
+    gap: 32px;
+    @include respond(phone) {
+      flex-direction: column;
+      align-items: unset;
+      gap: 16px;
+    }
+  }
+  &__apps {
+    display: flex;
+    gap: 16px;
+    img {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  &__appsStore {
+    display: flex;
+    gap: 16px;
+  }
+
+  .footer__arrow {
+    margin-left: 8px;
+  }
 }

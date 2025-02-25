@@ -1,0 +1,134 @@
+@import "../../styles/mixins.scss";
+
+.team {
+  &__container {
+    padding: 5rem;
+    width: 100%;
+
+    @include respond(phone) {
+      padding: 48px 16px;
+    }
+  }
+
+  .team__container .team__tool:nth-child(2) {
+    padding: 80px 0;
+    @include flex-align-center;
+
+    @include respond(phone) {
+      flex-direction: column;
+      padding: 48px 0;
+    }
+  }
+
+  &__tool {
+    @include flex-align-center;
+    width: 100%;
+    gap: 80px;
+    // padding: 80px;
+
+    @include respond(phone) {
+      flex-direction: column-reverse;
+      align-items: unset;
+      gap: 32px;
+    }
+
+    &__img {
+      width: 50%;
+      @include respond(phone) {
+        width: 100%;
+      }
+    }
+
+    .tool__content {
+      @include flex-col;
+      gap: 32px;
+      width: 50%;
+
+      @include respond(phone) {
+        width: 100%;
+      }
+    }
+
+    .tool__header {
+    }
+
+    .tool__text {
+      p {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 28.8px;
+        color: var(--blue-gray);
+
+        @include respond(phone) {
+          font-size: 16px;
+        }
+      }
+    }
+
+    .tool__lists {
+      @include flex-align-center;
+      gap: 10px;
+      color: var(--second-color);
+      padding-bottom: 24px;
+    }
+
+    .tool__select {
+      width: 14px;
+    }
+
+    .tool__btn {
+      padding: 16px 32px;
+      letter-spacing: 0.5px;
+    }
+
+    .tool__img {
+    }
+  }
+
+  &__footer {
+    display: flex;
+    width: 100%;
+    padding: 80px 0 80px 80px;
+    border: 1px solid #475569;
+    border-radius: 20px;
+
+    @include respond(phone) {
+      flex-direction: column;
+      gap: 32px;
+      padding: 24px;
+    }
+    .footer__content {
+      width: 50%;
+      @include flex-col;
+      row-gap: 32px;
+
+      @include respond(phone) {
+        width: 100%;
+      }
+      h3 {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 35.2px;
+        color: var(--second-color);
+
+        @include respond(phone) {
+          font-size: 18px;
+          line-height: 19.8px;
+        }
+      }
+    }
+
+    .footer__btn {
+      button {
+        padding: 16px 32px;
+      }
+    }
+
+    .footer__img {
+      width: 50%;
+      @include respond(phone) {
+        width: 100% !important;
+      }
+    }
+  }
+}
